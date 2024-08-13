@@ -8,15 +8,19 @@ body {
     padding: 0;
     background-color: #000000;
     color: #ffffff;
+    overflow-x: hidden; 
+
 }
 
 /* Container for Layout */
 .container {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
 }
 
 /* Header Styles */
@@ -198,12 +202,11 @@ body {
     color: #ffffff;
 }
 
-/* Container for Layout */
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
+.about {
+    margin-top: 40px; /* Add some margin to separate from header */
 }
+
+
 
 /* Header Styles */
 
@@ -245,7 +248,7 @@ nav ul li a.active {
 .about-hero {
     position: relative;
     text-align: center;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,28 +299,20 @@ h2::after {
 }
 
 /* Section Headings */
-h2.aboutHeaders {
-    font-family: 'Montserrat', sans-serif;
-    color: #AA8746;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-    margin-top: 0;  /* Ensure it is aligned at the top of the section */
-}
 
-h2.aboutHeaders::after {
-    content: '';
-    width: 60px;
-    height: 3px;
-    background: #AA8746;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+
+.aboutHeaders {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: 20px; 
 }
 
 
 /* Team Section */
+.team {
+    margin-top: 40px; 
+}
 .team-members {
     display: flex;
     flex-wrap: wrap;
@@ -359,7 +354,16 @@ h2.aboutHeaders::after {
     color: #ddd;
 }
 
+#meet{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
 /* Testimonials Section */
+.testimonials {
+    margin-top: 40px; 
+}
 .testimonial-cards {
     display: flex;
     flex-wrap: wrap;
