@@ -9,7 +9,6 @@ body {
     background-color: #000000;
     color: #ffffff;
     overflow-x: hidden; 
-
 }
 
 /* Container for Layout */
@@ -56,17 +55,20 @@ nav ul li a {
     padding: 10px;
     font-size: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     background-color: #ffffff;
     color: #111;
     border-radius: 5px;
+    border-bottom: 2px solid #AA8746;
 }
 
 /* Main Content Area */
 main {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 /* Hero Section */
@@ -89,16 +91,43 @@ main {
 .hero h2 {
     font-size: 3em;
     margin-bottom: 10px;
+    color: #AA8746; /* Original color restored */
 }
 
 .hero p {
     font-size: 1.2em;
+    color: #ffffff; /* Original color restored */
 }
 
 /* Section Headings */
 h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: #ffffff; /* Original color restored */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    color: #AA8746; /* Original color restored */
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #AA8746;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.aboutHeaders {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: 20px; 
 }
 
 /* Reasons Section */
@@ -110,6 +139,7 @@ h2, h3 {
     border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    color: #ffffff; /* Original color restored */
 }
 
 .reasons ul {
@@ -123,6 +153,7 @@ h2, h3 {
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    color: #ffffff; /* Original color restored */
 }
 
 .reasons ul li:hover {
@@ -138,6 +169,7 @@ h2, h3 {
     border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    color: #ffffff; /* Original color restored */
 }
 
 .services ul {
@@ -154,6 +186,7 @@ h2, h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #ffffff; /* Original color restored */
 }
 
 .services ul li:hover {
@@ -167,6 +200,7 @@ h2, h3 {
 
 .services ul li p {
     margin: 10px 0 0 0;
+    color: #ffffff; /* Original color restored */
 }
 
 .services ul li div {
@@ -188,63 +222,10 @@ h2, h3 {
 }
 
 /* About Section */
-
-
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
-
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    color: #ffffff;
-}
-
 .about {
     margin-top: 40px; /* Add some margin to separate from header */
 }
 
-
-
-/* Header Styles */
-
-#logo {
-    width: 100px;
-    height: 100px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #AA8746;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    font-size: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-bottom: 2px solid transparent;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-    background-color: #ffffff;
-    color: #111;
-    border-radius: 5px;
-    border-bottom: 2px solid #AA8746;
-}
-
-/* Hero Section */
 .about-hero {
     position: relative;
     text-align: center;
@@ -263,56 +244,14 @@ nav ul li a.active {
 .about-hero h2 {
     font-size: 3em;
     margin: 0;
+    color: #AA8746; /* Original color restored */
 }
-
-/* Main Content Area */
-main {
-    padding: 40px 0;
-}
-
-/* Section Headings */
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #AA8746;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-h2::after {
-    content: '';
-    width: 60px;
-    height: 3px;
-    background: #AA8746;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* About Section */
-.about p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-/* Section Headings */
-
-
-.aboutHeaders {
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    margin-top: 20px; 
-}
-
 
 /* Team Section */
 .team {
     margin-top: 40px; 
 }
+
 .team-members {
     display: flex;
     flex-wrap: wrap;
@@ -328,6 +267,7 @@ h2::after {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff; /* Original color restored */
 }
 
 .team-member:hover {
@@ -360,10 +300,12 @@ h2::after {
     margin-right: auto;
     width: 80%;
 }
+
 /* Testimonials Section */
 .testimonials {
     margin-top: 40px; 
 }
+
 .testimonial-cards {
     display: flex;
     flex-wrap: wrap;
@@ -380,6 +322,7 @@ h2::after {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     font-style: italic;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff; /* Original color restored */
 }
 
 .testimonial-card:hover {
@@ -389,6 +332,7 @@ h2::after {
 
 .testimonial-card p {
     margin-bottom: 15px;
+    color: #ffffff; /* Original color restored */
 }
 
 .testimonial-card h5 {
@@ -429,10 +373,13 @@ h2::after {
 
 /* Footer Styles */
 footer {
-    background: #111;
+    background: linear-gradient(to right, #111, #333);
     color: #ffffff;
     text-align: center;
     padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer p {
@@ -469,8 +416,6 @@ footer p {
     }
 }
 
-
-
 /* Process Section */
 .process {
     margin-bottom: 20px;
@@ -480,6 +425,7 @@ footer p {
     border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    color: #AA8746; /* Original color restored */
 }
 
 .process ul {
@@ -493,6 +439,7 @@ footer p {
     padding: 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    color: #ffffff; /* Original color restored */
 }
 
 .process ul li:hover {
@@ -518,7 +465,6 @@ footer p {
     text-align: center;
 }
 
-
 /* Contact Section */
 .contact {
     text-align: center;
@@ -529,18 +475,21 @@ footer p {
     max-width: 600px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff; /* Original color restored */
 }
 
 .contact h2 {
-    border-bottom: 2px solid #AA8746;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 2em;
+    color: #AA8746; /* Original color restored */
 }
 
 .contact p {
     font-size: 1.1em;
     margin: 10px 0;
+    color: #ffffff; /* Original color restored */
 }
 
 .contact a {
@@ -556,15 +505,4 @@ footer p {
 
 .contact p strong {
     color: #AA8746;
-}
-
-/* Footer Styles */
-footer {
-    background: linear-gradient(to right, #111, #333);
-    color: #ffffff;
-    text-align: center;
-    padding: 16px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
