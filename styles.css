@@ -506,3 +506,39 @@ footer p {
 .contact p strong {
     color: #AA8746;
 }
+
+
+
+/*Slider*/
+/* Slider Container */
+.slideshow {
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.slider-1 .item {
+    outline: none; /* Prevents borders when clicking */
+}
+
+.slider-1 .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Optional: Customize dots and arrows */
+.slick-prev, .slick-next {
+    color: #333;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.slick-dots li button:before {
+    color: #333;
+    font-size: 0.75em;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000;
+}
