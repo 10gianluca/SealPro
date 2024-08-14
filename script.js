@@ -10,3 +10,16 @@ $(document).ready(function(){
         arrows: true,  // Show next/prev arrows
     });
 });
+function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "block";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+
+// Prevent clicks on the image itself from closing the lightbox
+document.getElementById('lightbox-img').addEventListener('click', function(event) {
+    event.stopPropagation();
+});
