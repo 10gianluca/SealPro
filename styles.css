@@ -493,14 +493,14 @@ footer p {
 }
 
 .contact a {
-    color: #AA8746;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .contact a:hover {
-    color: #ffffff;
+    color: #AA8746;
 }
 
 .contact p strong {
