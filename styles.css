@@ -531,7 +531,7 @@ footer p {
 .slick-prev, .slick-next {
     color: #333;
     font-size: 1.5em;
-    z-index: 1;
+    z-index: 1001;
 }
 
 .slick-dots li button:before {
@@ -564,10 +564,10 @@ footer p {
 }
 
 .lightbox img {
-    width: 50%;
+    width: 40%;
     height: auto;
 }
-
+    
 .close {
     position: absolute;
     top: 20px;
