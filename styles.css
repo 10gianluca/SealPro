@@ -546,7 +546,7 @@ footer p {
 .lightbox {
     display: none;
     position: fixed;
-    z-index: 1001;  /* Ensure it's above the navbar */
+    z-index: 1010;  /* Ensure it's above the navbar */
     padding-top: 100px;
     left: 0;
     top: 0;
