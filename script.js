@@ -23,3 +23,5 @@ function closeLightbox() {
 document.getElementById('lightbox-img').addEventListener('click', function(event) {
     event.stopPropagation();
 });
+
+
